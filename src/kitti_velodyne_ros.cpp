@@ -25,7 +25,7 @@ int main(int argc, char **argv) {
   ros::Publisher poses_pub = private_nh.advertise<geometry_msgs::PoseArray>("poses", 100, true);
   ros::Publisher markers_pub = private_nh.advertise<visualization_msgs::MarkerArray>("markers", 100, true);
   
-  private_nh.param<double>("frequency", frequency, 1);
+  private_nh.param<double>("frequency", frequency, 10);
   private_nh.param<std::string>("velodyne_dir", velodyne_dir, "velodyne_dir_path");
   private_nh.param<std::string>("poses_file", poses_file, "poses_file_path");
   private_nh.param<bool>("save_to_csv", save_to_csv, false);
