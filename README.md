@@ -6,10 +6,6 @@ Load KITTI velodyne data, play in ROS
 
 ### Usage
 
-Dillinger requires [Node.js](https://nodejs.org/) v4+ to run.
-
-Install the dependencies and devDependencies and start the server.
-
 ```sh
 $ roslaunch kitti_velodyne_ros kitti_velodyne_ros.launch
 ```
